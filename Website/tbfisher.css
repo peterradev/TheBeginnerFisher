@@ -1,17 +1,27 @@
+body{
+    
+}
+
 nav{
     font-size: 1.7rem;
 }
 
 img{
-   width: 250px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 300px; 
+    height: auto;
 }
 
 /*Got the row and column from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 5px;
+    padding-left: 10px;
   }
   
   /* Clear floats after image containers */
@@ -19,4 +29,8 @@ img{
     content: "";
     clear: both;
     display: table;
+  }
+
+  .softPlastics{
+      text-align: center;
   }
