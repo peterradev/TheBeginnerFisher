@@ -7,6 +7,14 @@ body{
     margin-top: 40px;
 }
 
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
 nav{
     font-size: 1.7rem;
 }
@@ -94,3 +102,22 @@ img{
   section.seasons{
     text-align: center;
   }
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+    text-align: center;
+}
+
+.leftT{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.rightT{
+    grid-column: 2;
+    grid-row: 1;
+}
