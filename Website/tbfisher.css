@@ -1,9 +1,46 @@
 body{
-    
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #c4e0bc;
+    margin-top: 40px;
 }
 
 nav{
     font-size: 1.7rem;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 97%;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav .about{
+    float: right;
+}
+
+nav .contact{
+    float: right;
 }
 
 img{
@@ -11,8 +48,14 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    max-width: 300px; 
+    /*max-width: 500px;*/ 
     height: auto;
+    flex-flow: row wrap;
+}
+
+.welcome h1{
+    text-align: center;
+    font-size: 4rem;
 }
 
 /*Got the row and column from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
