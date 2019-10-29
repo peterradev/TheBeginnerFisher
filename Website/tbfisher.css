@@ -1,7 +1,7 @@
 body{
     margin: 20px;
     font-family: 'Roboto', sans-serif;
-    display: flex;
+    display: grid;
     flex-direction: column;
     background-color: #c4e0bc;
     margin-top: 40px;
@@ -61,6 +61,10 @@ img{
     font-size: 4rem;
 }
 
+.welcome p{
+    text-align: center;
+}
+
 .info p{
     text-align: center;
 }
@@ -83,4 +87,10 @@ img{
 
   .softPlastics{
       text-align: center;
+  }
+
+
+
+  section.seasons{
+    text-align: center;
   }
