@@ -20,6 +20,7 @@ nav ul{
     position: fixed;
     top: 0;
     width: 97%;
+    font-size: 1.2rem;
 }
 
 nav li{
@@ -34,6 +35,8 @@ nav a{
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
 
 nav .about{
     float: right;
