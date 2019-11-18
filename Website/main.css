@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #4AA4B0; */
+    background-color: #79C4CE;
+}
+
+.wrapper{
+    padding: 0px 30px;
+    display: grid;
+    flex-wrap: wrap;;
+}
+
+.pic1{
+    background: url('https://image.shutterstock.com/image-photo/young-man-fishing-on-lake-600w-151047842.jpg');
+    background-repeat: no-repeat;
+    width: 90%;
+    background-position: center;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+}
+
+
+
+/* Source for the Header https://codetheweb.blog/2017/12/07/fullscreen-image-hero/ */
+
+.header{ 
+    width: 100vw;
+    height: 100vh;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    text-align: center;
+    color: white;
+    
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+.header h1{
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+
+nav .toggle{
+    display: none;
+}
+
+
+nav{
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover{
+    background: #015e61;
+    transition: 0.5s;
+} 
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #2c8c99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+nav li{
+    float: right;
+} 
+
+nav ul li:first-child {
+     float: left; 
+}
+
+nav a{
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+
+nav li .beginning{
+    float: left;
+}
+
+nav .logo-text span{
+    color: #1bd1e9;
+    
+}
+
+
+
+
+@media only screen and (max-width:750px){
+    
+    .nav ul{
+        width: 100%;
+    }
+
+    nav .about{
+        display: none;
+    }
+
+    nav .contact{
+        display: none;
+    }
+
+    nav .seasons{
+        display: none;
+    }
+
+    nav .baits{
+        display: none;
+    }
+
+    nav .home{
+        display: none;
+    }
+
+    nav li .toggle#menu-toggle{
+        display: block;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+}
