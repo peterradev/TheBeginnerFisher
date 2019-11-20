@@ -3,7 +3,7 @@ body{
     padding: 0;
     /* background-color: #4AA4B0; */
     background-color: #79C4CE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alata', sans-serif;
 }
 
 .wrapper{
@@ -13,6 +13,7 @@ body{
     grid-template-areas: 
         "info   pic1"
         "pic2   about";
+    font-size: 1.4rem;
 
 }
 
