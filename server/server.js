@@ -3,6 +3,11 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
 
+var BaitSchema = mongoose.Schema({
+    "name": String,
+    "description": String
+});
+
 const express = require('express');
 
 const publicDir = path.join(__dirname, '../Website');
