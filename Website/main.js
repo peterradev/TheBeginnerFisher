@@ -1,12 +1,30 @@
-$(function () {
-    $(document).scroll(function () {
-      var $nav = $(".nav");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
+function loadApp(){
+    "use strict";
 
-$(document).ready(function(){
-    $('.toggle').on('click', function(){
-        $('.nav').toggleClass('showing');
-    });
-});
+    function buildBaits(response){
+        $(".bait-output").empty();
+
+        var $baits = response;
+
+        $baits.forEach((item)=>{
+            if(item !== null){
+                var bait = item.name;
+                var p = $("<p>");
+                p.html(bait);
+                $(".bait-output").append(p);
+            }
+        });
+    }
+
+    function getBaits(){
+        $.getJson("baits.json", (response)=>{
+            console.log("rsponse = "+response.toSource());
+            buildBaits(repsonse);
+        });
+    }
+
+    getBaits();
+};
+
+
+$(document).ready(loadApp);
